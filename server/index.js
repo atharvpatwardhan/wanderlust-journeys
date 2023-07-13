@@ -21,3 +21,4 @@ mongoose.connect("mongodb+srv://atharv:atharv2611@cluster0.9gmrfb8.mongodb.net/"
 .then(()=>app.listen(PORT,()=>console.log(`Server running on port : ${PORT}`)))
 .catch((error)=>console.log(error.message));
 
+module.exports = app;
