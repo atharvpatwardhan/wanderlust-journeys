@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json({limit:"30mb",extended: true}));
 app.use(bodyParser.urlencoded({limit:"30mb",extended: true}));
 app.use(cors({
-  origin: ["wanderlust-journeys-frontend.vercel.app"],
+  origin: ["wanderlust-journeys-frontend.vercel.app","wanderlust-journeys-frontend.vercel.app/posts","wanderlust-journeys-frontend.vercel.app/login"],
   methods: ["POST","GET","PUT","DELETE"],
   credentials: true
 }));
