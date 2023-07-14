@@ -7,10 +7,10 @@ export const getPosts = async (req,res) =>{
         // console.log(postMessages);
 
         res.status(200).json(postMessages);
+        res.header("Access-Control-Allow-Origin", "*");
     }
     catch(error){
         res.status(404).json({message:error.message});
-
     }
 }
 
