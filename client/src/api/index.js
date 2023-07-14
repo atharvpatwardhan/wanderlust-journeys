@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // const url = 'http://localhost:5000/posts';
 
-const API = axios.create({baseURL:'https://wanderlust-journeys-backend-git-main-atharvpatwardhan.vercel.app'});
+const API = axios.create({baseURL:'https://wanderlust-journeys.vercel.app'});
 
 API.interceptors.request.use((req)=>{
     if(localStorage.getItem('profile')){
